@@ -1,0 +1,105 @@
+C:\Users\Vaso\source\repos\BioskopApp\BioskopApp\bin\Debug\netcoreapp2.1\BioskopApp.deps.json
+C:\Users\Vaso\source\repos\BioskopApp\BioskopApp\bin\Debug\netcoreapp2.1\BioskopApp.runtimeconfig.json
+C:\Users\Vaso\source\repos\BioskopApp\BioskopApp\bin\Debug\netcoreapp2.1\BioskopApp.runtimeconfig.dev.json
+C:\Users\Vaso\source\repos\BioskopApp\BioskopApp\bin\Debug\netcoreapp2.1\BioskopApp.dll
+C:\Users\Vaso\source\repos\BioskopApp\BioskopApp\bin\Debug\netcoreapp2.1\BioskopApp.pdb
+C:\Users\Vaso\source\repos\BioskopApp\BioskopApp\bin\Debug\netcoreapp2.1\BioskopApp.Views.dll
+C:\Users\Vaso\source\repos\BioskopApp\BioskopApp\bin\Debug\netcoreapp2.1\BioskopApp.Views.pdb
+C:\Users\Vaso\source\repos\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.csprojAssemblyReference.cache
+C:\Users\Vaso\source\repos\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.csproj.CoreCompileInputs.cache
+C:\Users\Vaso\source\repos\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.RazorAssemblyInfo.cache
+C:\Users\Vaso\source\repos\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.RazorAssemblyInfo.cs
+C:\Users\Vaso\source\repos\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+C:\Users\Vaso\source\repos\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.AssemblyInfoInputs.cache
+C:\Users\Vaso\source\repos\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.AssemblyInfo.cs
+C:\Users\Vaso\source\repos\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.TagHelpers.input.cache
+C:\Users\Vaso\source\repos\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.TagHelpers.output.cache
+C:\Users\Vaso\source\repos\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.RazorCoreGenerate.cache
+C:\Users\Vaso\source\repos\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewStart.g.cshtml.cs
+C:\Users\Vaso\source\repos\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
+C:\Users\Vaso\source\repos\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
+C:\Users\Vaso\source\repos\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\Vaso\source\repos\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
+C:\Users\Vaso\source\repos\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+C:\Users\Vaso\source\repos\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Users\Vaso\source\repos\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\Vaso\source\repos\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LoginPartial.g.cshtml.cs
+C:\Users\Vaso\source\repos\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\Vaso\source\repos\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\Vaso\source\repos\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\Vaso\source\repos\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.RazorTargetAssemblyInfo.cache
+C:\Users\Vaso\source\repos\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.RazorTargetAssemblyInfo.cs
+C:\Users\Vaso\source\repos\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.Views.pdb
+C:\Users\Vaso\source\repos\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.dll
+C:\Users\Vaso\source\repos\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.pdb
+C:\Users\Vaso\source\repos\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.csproj.CopyComplete
+H:\Bioskop pocetno\BioskopApp\BioskopApp\bin\Debug\netcoreapp2.1\BioskopApp.deps.json
+H:\Bioskop pocetno\BioskopApp\BioskopApp\bin\Debug\netcoreapp2.1\BioskopApp.runtimeconfig.json
+H:\Bioskop pocetno\BioskopApp\BioskopApp\bin\Debug\netcoreapp2.1\BioskopApp.runtimeconfig.dev.json
+H:\Bioskop pocetno\BioskopApp\BioskopApp\bin\Debug\netcoreapp2.1\BioskopApp.dll
+H:\Bioskop pocetno\BioskopApp\BioskopApp\bin\Debug\netcoreapp2.1\BioskopApp.pdb
+H:\Bioskop pocetno\BioskopApp\BioskopApp\bin\Debug\netcoreapp2.1\BioskopApp.Views.dll
+H:\Bioskop pocetno\BioskopApp\BioskopApp\bin\Debug\netcoreapp2.1\BioskopApp.Views.pdb
+H:\Bioskop pocetno\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.csprojAssemblyReference.cache
+H:\Bioskop pocetno\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.csproj.CoreCompileInputs.cache
+H:\Bioskop pocetno\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.RazorAssemblyInfo.cache
+H:\Bioskop pocetno\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.RazorAssemblyInfo.cs
+H:\Bioskop pocetno\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+H:\Bioskop pocetno\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.AssemblyInfoInputs.cache
+H:\Bioskop pocetno\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.AssemblyInfo.cs
+H:\Bioskop pocetno\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.TagHelpers.input.cache
+H:\Bioskop pocetno\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.TagHelpers.output.cache
+H:\Bioskop pocetno\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.RazorCoreGenerate.cache
+H:\Bioskop pocetno\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewStart.g.cshtml.cs
+H:\Bioskop pocetno\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
+H:\Bioskop pocetno\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
+H:\Bioskop pocetno\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+H:\Bioskop pocetno\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
+H:\Bioskop pocetno\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+H:\Bioskop pocetno\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+H:\Bioskop pocetno\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+H:\Bioskop pocetno\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LoginPartial.g.cshtml.cs
+H:\Bioskop pocetno\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+H:\Bioskop pocetno\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+H:\Bioskop pocetno\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+H:\Bioskop pocetno\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.RazorTargetAssemblyInfo.cache
+H:\Bioskop pocetno\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.RazorTargetAssemblyInfo.cs
+H:\Bioskop pocetno\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.Views.pdb
+H:\Bioskop pocetno\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.dll
+H:\Bioskop pocetno\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.pdb
+H:\Bioskop pocetno\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.csproj.CopyComplete
+H:\Bioskop_pocetno\BioskopApp\BioskopApp\bin\Debug\netcoreapp2.1\BioskopApp.deps.json
+H:\Bioskop_pocetno\BioskopApp\BioskopApp\bin\Debug\netcoreapp2.1\BioskopApp.runtimeconfig.json
+H:\Bioskop_pocetno\BioskopApp\BioskopApp\bin\Debug\netcoreapp2.1\BioskopApp.runtimeconfig.dev.json
+H:\Bioskop_pocetno\BioskopApp\BioskopApp\bin\Debug\netcoreapp2.1\BioskopApp.dll
+H:\Bioskop_pocetno\BioskopApp\BioskopApp\bin\Debug\netcoreapp2.1\BioskopApp.pdb
+H:\Bioskop_pocetno\BioskopApp\BioskopApp\bin\Debug\netcoreapp2.1\BioskopApp.Views.dll
+H:\Bioskop_pocetno\BioskopApp\BioskopApp\bin\Debug\netcoreapp2.1\BioskopApp.Views.pdb
+H:\Bioskop_pocetno\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.csprojAssemblyReference.cache
+H:\Bioskop_pocetno\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.csproj.CoreCompileInputs.cache
+H:\Bioskop_pocetno\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.RazorAssemblyInfo.cache
+H:\Bioskop_pocetno\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.RazorAssemblyInfo.cs
+H:\Bioskop_pocetno\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+H:\Bioskop_pocetno\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.AssemblyInfoInputs.cache
+H:\Bioskop_pocetno\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.AssemblyInfo.cs
+H:\Bioskop_pocetno\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.TagHelpers.input.cache
+H:\Bioskop_pocetno\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.TagHelpers.output.cache
+H:\Bioskop_pocetno\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.RazorCoreGenerate.cache
+H:\Bioskop_pocetno\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewStart.g.cshtml.cs
+H:\Bioskop_pocetno\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
+H:\Bioskop_pocetno\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
+H:\Bioskop_pocetno\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+H:\Bioskop_pocetno\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
+H:\Bioskop_pocetno\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+H:\Bioskop_pocetno\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+H:\Bioskop_pocetno\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+H:\Bioskop_pocetno\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LoginPartial.g.cshtml.cs
+H:\Bioskop_pocetno\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+H:\Bioskop_pocetno\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+H:\Bioskop_pocetno\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+H:\Bioskop_pocetno\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.RazorTargetAssemblyInfo.cache
+H:\Bioskop_pocetno\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.RazorTargetAssemblyInfo.cs
+H:\Bioskop_pocetno\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.Views.pdb
+H:\Bioskop_pocetno\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.dll
+H:\Bioskop_pocetno\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.pdb
+H:\Bioskop_pocetno\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.csproj.CopyComplete
