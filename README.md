@@ -1,2 +1,2 @@
 # Bioskop-Projekat
-COMETRADE
+COMTRADE
