@@ -24,7 +24,9 @@ namespace BioskopApp.Controllers
         // GET: ProgramOfEvents
         public async Task<IActionResult> Index()
         {
+
             return View(await _context.ProgramOfEvents.Include(p => p.Movie).ToListAsync());
+
         }
 
         // GET: ProgramOfEvents/Details/5
