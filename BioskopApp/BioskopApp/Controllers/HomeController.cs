@@ -22,8 +22,8 @@ namespace BioskopApp.Controllers
         {
 
             ViewData["Movies"] = dbContext.Movies.Where(m => m.Highlighted);
-         
-                
+            ViewData["Repertoar"] = dbContext.Movies.ToList();
+
             return View();
         }
 

@@ -12225,11 +12225,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\Bioskop_pocetno\\BioskopApp\\BioskopApp\\BioskopApp.csproj",
+      "projectUniqueName": "H:\\GIT PROJEKAT BIOSKOP\\Bioskop-Projekat\\BioskopApp\\BioskopApp\\BioskopApp.csproj",
       "projectName": "BioskopApp",
-      "projectPath": "H:\\Bioskop_pocetno\\BioskopApp\\BioskopApp\\BioskopApp.csproj",
+      "projectPath": "H:\\GIT PROJEKAT BIOSKOP\\Bioskop-Projekat\\BioskopApp\\BioskopApp\\BioskopApp.csproj",
       "packagesPath": "C:\\Users\\vlopi\\.nuget\\packages\\",
-      "outputPath": "H:\\Bioskop_pocetno\\BioskopApp\\BioskopApp\\obj\\",
+      "outputPath": "H:\\GIT PROJEKAT BIOSKOP\\Bioskop-Projekat\\BioskopApp\\BioskopApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -103,3 +103,38 @@ H:\Bioskop_pocetno\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.View
 H:\Bioskop_pocetno\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.dll
 H:\Bioskop_pocetno\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.pdb
 H:\Bioskop_pocetno\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.csproj.CopyComplete
+H:\GIT PROJEKAT BIOSKOP\Bioskop-Projekat\BioskopApp\BioskopApp\bin\Debug\netcoreapp2.1\BioskopApp.deps.json
+H:\GIT PROJEKAT BIOSKOP\Bioskop-Projekat\BioskopApp\BioskopApp\bin\Debug\netcoreapp2.1\BioskopApp.runtimeconfig.json
+H:\GIT PROJEKAT BIOSKOP\Bioskop-Projekat\BioskopApp\BioskopApp\bin\Debug\netcoreapp2.1\BioskopApp.runtimeconfig.dev.json
+H:\GIT PROJEKAT BIOSKOP\Bioskop-Projekat\BioskopApp\BioskopApp\bin\Debug\netcoreapp2.1\BioskopApp.dll
+H:\GIT PROJEKAT BIOSKOP\Bioskop-Projekat\BioskopApp\BioskopApp\bin\Debug\netcoreapp2.1\BioskopApp.pdb
+H:\GIT PROJEKAT BIOSKOP\Bioskop-Projekat\BioskopApp\BioskopApp\bin\Debug\netcoreapp2.1\BioskopApp.Views.dll
+H:\GIT PROJEKAT BIOSKOP\Bioskop-Projekat\BioskopApp\BioskopApp\bin\Debug\netcoreapp2.1\BioskopApp.Views.pdb
+H:\GIT PROJEKAT BIOSKOP\Bioskop-Projekat\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.csprojAssemblyReference.cache
+H:\GIT PROJEKAT BIOSKOP\Bioskop-Projekat\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.csproj.CoreCompileInputs.cache
+H:\GIT PROJEKAT BIOSKOP\Bioskop-Projekat\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.RazorAssemblyInfo.cache
+H:\GIT PROJEKAT BIOSKOP\Bioskop-Projekat\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.RazorAssemblyInfo.cs
+H:\GIT PROJEKAT BIOSKOP\Bioskop-Projekat\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+H:\GIT PROJEKAT BIOSKOP\Bioskop-Projekat\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.AssemblyInfoInputs.cache
+H:\GIT PROJEKAT BIOSKOP\Bioskop-Projekat\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.AssemblyInfo.cs
+H:\GIT PROJEKAT BIOSKOP\Bioskop-Projekat\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.TagHelpers.input.cache
+H:\GIT PROJEKAT BIOSKOP\Bioskop-Projekat\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.TagHelpers.output.cache
+H:\GIT PROJEKAT BIOSKOP\Bioskop-Projekat\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.RazorCoreGenerate.cache
+H:\GIT PROJEKAT BIOSKOP\Bioskop-Projekat\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewStart.g.cshtml.cs
+H:\GIT PROJEKAT BIOSKOP\Bioskop-Projekat\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
+H:\GIT PROJEKAT BIOSKOP\Bioskop-Projekat\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
+H:\GIT PROJEKAT BIOSKOP\Bioskop-Projekat\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+H:\GIT PROJEKAT BIOSKOP\Bioskop-Projekat\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
+H:\GIT PROJEKAT BIOSKOP\Bioskop-Projekat\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+H:\GIT PROJEKAT BIOSKOP\Bioskop-Projekat\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+H:\GIT PROJEKAT BIOSKOP\Bioskop-Projekat\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+H:\GIT PROJEKAT BIOSKOP\Bioskop-Projekat\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LoginPartial.g.cshtml.cs
+H:\GIT PROJEKAT BIOSKOP\Bioskop-Projekat\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+H:\GIT PROJEKAT BIOSKOP\Bioskop-Projekat\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+H:\GIT PROJEKAT BIOSKOP\Bioskop-Projekat\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+H:\GIT PROJEKAT BIOSKOP\Bioskop-Projekat\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.RazorTargetAssemblyInfo.cache
+H:\GIT PROJEKAT BIOSKOP\Bioskop-Projekat\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.RazorTargetAssemblyInfo.cs
+H:\GIT PROJEKAT BIOSKOP\Bioskop-Projekat\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.Views.pdb
+H:\GIT PROJEKAT BIOSKOP\Bioskop-Projekat\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.dll
+H:\GIT PROJEKAT BIOSKOP\Bioskop-Projekat\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.pdb
+H:\GIT PROJEKAT BIOSKOP\Bioskop-Projekat\BioskopApp\BioskopApp\obj\Debug\netcoreapp2.1\BioskopApp.csproj.CopyComplete
