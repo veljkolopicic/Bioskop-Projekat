@@ -12378,23 +12378,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\vlopi\\.nuget\\packages\\": {},
+    "C:\\Users\\Vaso\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\GIT PROJEKAT BIOSKOP\\Bioskop-Projekat\\BioskopApp\\BioskopApp\\BioskopApp.csproj",
+      "projectUniqueName": "H:\\Bioskop\\BioskopApp\\BioskopApp\\BioskopApp.csproj",
       "projectName": "BioskopApp",
-      "projectPath": "H:\\GIT PROJEKAT BIOSKOP\\Bioskop-Projekat\\BioskopApp\\BioskopApp\\BioskopApp.csproj",
-      "packagesPath": "C:\\Users\\vlopi\\.nuget\\packages\\",
-      "outputPath": "H:\\GIT PROJEKAT BIOSKOP\\Bioskop-Projekat\\BioskopApp\\BioskopApp\\obj\\",
+      "projectPath": "H:\\Bioskop\\BioskopApp\\BioskopApp\\BioskopApp.csproj",
+      "packagesPath": "C:\\Users\\Vaso\\.nuget\\packages\\",
+      "outputPath": "H:\\Bioskop\\BioskopApp\\BioskopApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\vlopi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Vaso\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

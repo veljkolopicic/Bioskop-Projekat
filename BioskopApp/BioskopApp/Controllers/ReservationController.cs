@@ -69,7 +69,7 @@ namespace BioskopApp.Controllers
                 reservation.User = await _userManager.GetUserAsync(HttpContext.User);
             }
 
-            if (numberOfTickets < reservation.NumberOfTickets)
+            if (numberOfTickets < reservation.NumberOfTickets || reservation.NumberOfTickets <=0)
             {
                 return RedirectToAction(nameof(Index));
             }
@@ -92,7 +92,7 @@ namespace BioskopApp.Controllers
                 .Where(_res => _res.User.Id == user.Id 
                       && (_res.ProgramOfEvents.Date > DateTime.Now 
                           || _res.ProgramOfEvents.Date == DateTime.Now && _res.ProgramOfEvents.Time.Hour > DateTime.Now.Hour) ).ToList();
-            return View(reserved);
+            return View(reserved.OrderBy(r => r.ProgramOfEvents.Date).ToList());
         }
 
         public IActionResult Delete(int id)
@@ -114,9 +114,7 @@ namespace BioskopApp.Controllers
 
 
         public async Task<IActionResult> ReservedTickets()
-        {
-
-            var user = await _userManager.GetUserAsync(HttpContext.User);
+        { 
 
             var reserved = _context.Reservations.Include(r => r.ProgramOfEvents)
                 .Include(r => r.User)
@@ -124,7 +122,7 @@ namespace BioskopApp.Controllers
                 .Where(_res =>_res.ProgramOfEvents.Date > DateTime.Now
                                    || _res.ProgramOfEvents.Date == DateTime.Now && _res.ProgramOfEvents.Time.Hour > DateTime.Now.Hour).ToList()
                 .GroupBy(r => r.ProgramOfEvents);
-            return View(reserved);
+            return View(reserved.OrderBy(r =>r.Key.Date));
         }
     }
 }

@@ -16,7 +16,7 @@ namespace BioskopApp.Controllers
         private ApplicationDbContext dbContext {get; set; }
 
 
-        public HomeController(ApplicationDbContext dbContext, UserManager<IdentityUser> userManager)
+        public HomeController(ApplicationDbContext dbContext)
         {
             this.dbContext = dbContext;
 
