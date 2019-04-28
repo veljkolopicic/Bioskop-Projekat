@@ -44,6 +44,50 @@ namespace BioskopApp.Migrations
                     b.ToTable("Movies");
                 });
 
+            modelBuilder.Entity("BioskopApp.Data.ProgramOfEvents", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("Date");
+
+                    b.Property<int>("MovieId");
+
+                    b.Property<decimal>("Price");
+
+                    b.Property<int>("Tickets");
+
+                    b.Property<DateTime>("Time");
+
+                    b.HasKey("ID");
+
+                    b.HasIndex("MovieId");
+
+                    b.ToTable("ProgramOfEvents");
+                });
+
+            modelBuilder.Entity("BioskopApp.Data.Reservation", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("NumberOfTickets");
+
+                    b.Property<int?>("ProgramOfEventsID");
+
+                    b.Property<string>("UserId");
+
+                    b.HasKey("ID");
+
+                    b.HasIndex("ProgramOfEventsID");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Reservations");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
                     b.Property<string>("Id")
@@ -207,6 +251,25 @@ namespace BioskopApp.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens");
+                });
+
+            modelBuilder.Entity("BioskopApp.Data.ProgramOfEvents", b =>
+                {
+                    b.HasOne("BioskopApp.Data.Movie", "Movie")
+                        .WithMany()
+                        .HasForeignKey("MovieId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("BioskopApp.Data.Reservation", b =>
+                {
+                    b.HasOne("BioskopApp.Data.ProgramOfEvents", "ProgramOfEvents")
+                        .WithMany()
+                        .HasForeignKey("ProgramOfEventsID");
+
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

@@ -15,18 +15,18 @@
             }
             else
             {
-                <li data-target="#myCarousel" data-slide-to="@i"></li>
+                <li data-target="#myCarousel" data-slide-to="@i" ></li>
             }
         }
     </ol>
     <div class="carousel-inner" role="listbox">
-
+        
         @for (int i = 0; i < movies.Count(); i++)
         {
             if (i == 0)
             {
                 <div class="item active">
-                    <img src="@movies[i].Image" alt="@movies[i].Name" class="img-responsive" />
+                    <img src="@movies[i].Image" alt="@movies[i].Name" class="img-responsive"/>
                     <div class="carousel-caption" role="option">
                         <p>
                             @movies[i].Description
@@ -40,7 +40,7 @@
             else
             {
                 <div class="item">
-                    <img src="@movies[i].Image" alt="@movies[i].Name" width="1920" height="1080" class="img-responsive" />
+                    <img src="@movies[i].Image" alt="@movies[i].Name" width="1920" height="1080" class="img-responsive"/>
                     <div class="carousel-caption" role="option">
                         <p>
                             @movies[i].Description
@@ -51,7 +51,7 @@
                     </div>
                 </div>
             }
-
+        
         }
     </div>
     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
@@ -64,29 +64,29 @@
     </a>
 </div>
 <h1>Repertoar filmova</h1>
-<br />
+<br/>
 <div>
     @foreach (var movie in repertoar)
     {
         <div id="@movie.ID">
-            <br />
-            <br />
-            <br />
-            <h2>@movie.Name</h2>
-            <img src="@movie.ImageRepertoar" width="400" height="600" style="float: left;" />
+            <br/>
+            <br/>
+            <br/>
+            <h2 >@movie.Name</h2>
+            <img src="@movie.ImageRepertoar" width="400" height="600" style="float: left;"/>
             <p style="float: right; width: 400px; height: 600px;">@movie.LongDescription </p>
-            <br />
+            <br/>
         </div>
-
+       
         <div>
             &nbsp;
-            <br />
-
+            <br/>
+            
             <iframe style="padding: 30px" width="560" height="315" src="@movie.Trailer" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <br />
-            <br />
-            <br />
+            <br/>
+            <br/>
+            <br/>
         </div>
-
+        
     }
 </div>

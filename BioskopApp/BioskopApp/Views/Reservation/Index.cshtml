@@ -1,0 +1,56 @@
+﻿@model IEnumerable<BioskopApp.Data.ProgramOfEvents>
+
+@{
+    ViewData["Title"] = "Rezervacija karata";
+}
+
+<h2>Rezervacija karata</h2>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>
+            Ime filma
+        </th>
+        <th>
+            Datum
+        </th>
+        <th>
+            Vreme
+        </th>
+        <th>
+            Preostale karte
+        </th>
+        <th>
+            Cena karte
+        </th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Movie.Name)
+            </td>
+            <td>
+                @{var formateddate = item.Date.ToString("dd MMMM yyyy");}
+                @Html.DisplayFor(modelItem => formateddate)
+            </td>
+            <td>
+                @{var formateddate2 = item.Time.ToString("hh:mm tt");}
+                @Html.DisplayFor(modelItem => formateddate2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tickets)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                <a asp-action="Reserve" asp-route-id="@item.ID">Rezervisi</a> |
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

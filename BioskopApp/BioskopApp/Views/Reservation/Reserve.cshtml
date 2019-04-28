@@ -1,0 +1,49 @@
+﻿@model BioskopApp.Data.Reservation
+
+@{
+    ViewBag.Title = "Rezervacija";
+    Layout = "_Layout";
+}
+
+<h2>Rezervacija</h2>
+
+
+<div class="col-md-4">
+    <form asp-action="Reserve2">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <input type="hidden" asp-for="ID" />
+        <div class="form-group">
+            <label asp-for="ProgramOfEvents.Movie.Name" class="control-label">Naslov filma</label>
+            <input disabled asp-for="ProgramOfEvents.Movie.Name" />
+        </div>
+        <div class="form-group">
+            <label asp-for="ProgramOfEvents.Date" class="control-label">Datum</label>
+            <input disabled type="date" asp-for="ProgramOfEvents.Date" class="form-control" />
+            <span asp-validation-for="ProgramOfEvents.Date" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="ProgramOfEvents.Time" class="control-label">Vreme</label>
+            <input disabled type="time" asp-for="ProgramOfEvents.Time" class="form-control" />
+            <span asp-validation-for="ProgramOfEvents.Time" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="ProgramOfEvents.Tickets" class="control-label">Preostale karte</label>
+            <input disabled asp-for="ProgramOfEvents.Tickets" class="form-control" />
+            <span asp-validation-for="ProgramOfEvents.Tickets" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="ProgramOfEvents.Price" class="control-label">Cena karte</label>
+            <input disabled asp-for="ProgramOfEvents.Price" class="form-control" />
+            <span asp-validation-for="ProgramOfEvents.Price" class="text-danger"></span>
+        </div>
+        <input type="hidden" asp-for="ProgramOfEventsId" />
+        <div class="form-group">
+            <label asp-for="NumberOfTickets" class="control-label">Broj karata za rezervaciju</label>
+            <input asp-for="NumberOfTickets" class="form-control" />
+            <span asp-validation-for="NumberOfTickets" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Save" class="btn btn-default" />
+        </div>
+    </form>
+</div>

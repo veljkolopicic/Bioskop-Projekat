@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using BioskopApp.Data;
 using Microsoft.AspNetCore.Mvc;
 using BioskopApp.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 namespace BioskopApp.Controllers
@@ -14,16 +15,18 @@ namespace BioskopApp.Controllers
     {
         private ApplicationDbContext dbContext {get; set; }
 
-        public HomeController(ApplicationDbContext dbContext)
+
+        public HomeController(ApplicationDbContext dbContext, UserManager<IdentityUser> userManager)
         {
             this.dbContext = dbContext;
+
         }
         public IActionResult Index()
         {
 
             ViewData["Movies"] = dbContext.Movies.Where(m => m.Highlighted);
             ViewData["Repertoar"] = dbContext.Movies.ToList();
-
+                
             return View();
         }
 
