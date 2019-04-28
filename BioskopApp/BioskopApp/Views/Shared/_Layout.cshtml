@@ -33,13 +33,15 @@
                     <li><a asp-area="" asp-controller="Home" asp-action="Index">Početna stranica</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="About">O bioskopu</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="Contact">Kontakt</a></li>
-                    @if (User.Identity.IsAuthenticated)
+                    @if (User.Identity.IsAuthenticated && User.Identity.Name != "vlopicic@gmail.com")
                     {
                         <li><a asp-area="" asp-controller="Reservation" asp-action="Index">Rezervacija</a></li>
+                        <li><a asp-area="" asp-controller="Reservation" asp-action="MyTickets">Rezervisane karte</a></li>
                     }
                     @if (User.Identity.IsAuthenticated && User.Identity.Name.Equals("vlopicic@gmail.com"))
                     {
                         <li><a asp-area="" asp-controller="ProgramOfEvents" asp-action="Index">Kreiraj događaj</a></li>
+                        <li><a asp-area="" asp-controller="Reservation" asp-action="ReservedTickets">Rezervisane karte</a></li>
                     }
 
 

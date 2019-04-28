@@ -1,0 +1,51 @@
+﻿@model IEnumerable<IGrouping<BioskopApp.Data.ProgramOfEvents, BioskopApp.Data.Reservation>>
+
+@{
+    ViewBag.Title = "Rezervisane karte";
+    Layout = "_Layout";
+}
+
+<h2>Rezervisane karte po dogadjajima</h2>
+
+@foreach (var ev in Model)
+{
+    var formateddate = ev.Key.Date.ToString("dd MMMM yyyy");
+    var formatedTime = ev.Key.Time.ToString("HH:mm tt");
+
+    <h3>@ev.Key.Movie.Name, @formateddate, @formatedTime</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Korisnik
+                </th>
+                <th>
+                    Broj karata
+                </th>
+                <th>
+                    Cena pojedinačne karte
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var res in ev)
+        {
+
+      
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => res.User.UserName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => res.NumberOfTickets)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => res.ProgramOfEvents.Price)
+                </td>
+            </tr>
+
+      
+        }
+        </tbody>
+    </table>
+}

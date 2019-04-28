@@ -5560,7 +5560,7 @@
       ]
     },
     "Microsoft.AspNetCore.Razor.Design/2.1.2": {
-      "sha512": "BclSBrm1mZzG1mjYG3Fm60ObVFa+DTKUkE0pZrg1nq7vJ/4whuLLQ3vk4ZsPAUbLyz4XiEyYNIMO1K/1Au+OLQ==",
+      "sha512": "ab4+TZw3Sxqrr5TwrwVyABeQkhSxYMJXgG6yZw7T+r6Vz+hcOt+pK79o15ESG7kZvWAK9wRG7emnTIia5O6R1Q==",
       "type": "package",
       "path": "microsoft.aspnetcore.razor.design/2.1.2",
       "files": [
@@ -7153,7 +7153,7 @@
       ]
     },
     "Microsoft.VisualStudio.Web.CodeGeneration/2.1.5": {
-      "sha512": "ZqtyAJRVk8Z7gEMJFjxGUgGz32qVFpDTsJCiH1Xi71AyYxkgmr6w1xMxZ1hNgGztEIiraNWuw0Xj9TC9Vqn8eQ==",
+      "sha512": "3qwHeXKBSJFc/m5Bk8MIWH5S3CwzSZsYaOrQM4YooRYvteVJnoCv171FBdiZQB1Kgzf3qKQQV6ZT3MPZvLTU9w==",
       "type": "package",
       "path": "microsoft.visualstudio.web.codegeneration/2.1.5",
       "files": [
@@ -7165,7 +7165,7 @@
       ]
     },
     "Microsoft.VisualStudio.Web.CodeGeneration.Contracts/2.1.5": {
-      "sha512": "PGE5jWSDsy6ryfluf9japNf3jYhXZa9DNusLxxsApLuRc1A/4K/SDOLRijVlWh5M99b5lySIDQECDzv/nwmw1w==",
+      "sha512": "XFzb2mP8eDVcuOpLIP6KcKJi89zAZ9398iBZyh/3SS+me1OpAj+L5BqojxnFLgVFJEPDpV4NVpA+KUmcsPzsHw==",
       "type": "package",
       "path": "microsoft.visualstudio.web.codegeneration.contracts/2.1.5",
       "files": [
@@ -7177,7 +7177,7 @@
       ]
     },
     "Microsoft.VisualStudio.Web.CodeGeneration.Core/2.1.5": {
-      "sha512": "r2+Fxu8ibOx2C4wUofTCQPw/9iwJ2IBOUjl28tX7uue/EwDq59bKNugxHhDLbV2UUdgG0SXLnrMNkWzolW2KIw==",
+      "sha512": "qfFBObQGn3FJd3eASSaOXWOld4LjIQEdXZnbtVWz7cl1T8TVj7n48JGaJRaKl2cZ5Tu7wPoww8i3sk+f1ItOOA==",
       "type": "package",
       "path": "microsoft.visualstudio.web.codegeneration.core/2.1.5",
       "files": [
@@ -7189,7 +7189,7 @@
       ]
     },
     "Microsoft.VisualStudio.Web.CodeGeneration.Design/2.1.5": {
-      "sha512": "oDFpfXAv3sEiSSGDebTlkCK73zQTrB1YxPzKfXMxtunn+93xNguPMZSYjN1HvvX3UZVCsE7v+eJk7xQiYE5BwQ==",
+      "sha512": "gkaEV5xOZlle0VatA1mdBzHWeQTPZIbiF1c/I4t8QpmMkr8c1mnUO+y9cT9WulGTdRTTN60y4Py3m5ASIJGkMA==",
       "type": "package",
       "path": "microsoft.visualstudio.web.codegeneration.design/2.1.5",
       "files": [
@@ -7211,7 +7211,7 @@
       ]
     },
     "Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore/2.1.5": {
-      "sha512": "NX1Yf2vwmv/82syzgfee9qtSdmTebb45G8QZ4jB5su5+AbeJiMSXh9WCn6PdgUT1Iwwly7XqAkeIN18vGbJiFg==",
+      "sha512": "30GhV5F37L3jg0TQf66vUguHIym3nUTQu1HXQsmsugnxnBV1wm16K1B8NXsPnhzAfXqDNou/KLIxbepP2HXknw==",
       "type": "package",
       "path": "microsoft.visualstudio.web.codegeneration.entityframeworkcore/2.1.5",
       "files": [
@@ -7224,7 +7224,7 @@
       ]
     },
     "Microsoft.VisualStudio.Web.CodeGeneration.Templating/2.1.5": {
-      "sha512": "4Lua16BnCqrgon0z9xyyeGSftfs/rNUqACc1SfymnGJQQIQzeF5fofgGctrFSL0ORSVAyXIBTqTq3N5u+mC8XQ==",
+      "sha512": "55J1sRxTLzreiWI0EsDOYdvwykfW228q1fwuSJUIOFjpiHGD28hYgHarYuqy2X7Bhm8W5aPS/6niOeL0ecXbow==",
       "type": "package",
       "path": "microsoft.visualstudio.web.codegeneration.templating/2.1.5",
       "files": [
@@ -7236,7 +7236,7 @@
       ]
     },
     "Microsoft.VisualStudio.Web.CodeGeneration.Utils/2.1.5": {
-      "sha512": "ICgSNRn2ULjjjcGC4lqbyJHDtZX+OzMBCXak9jIc2yxRrSEoYYYRpIey2UjCnAT1L/3oXMZ9RPftQA7qLp2nRg==",
+      "sha512": "GykNlwMG0Sg3y7+bWFd6Q69qX3P+C5aHXi8lPzyt+I6FL3CCaqeL15EhrTQy6b5SUPSnBbfu/618HzVMP/7p/A==",
       "type": "package",
       "path": "microsoft.visualstudio.web.codegeneration.utils/2.1.5",
       "files": [
@@ -7248,7 +7248,7 @@
       ]
     },
     "Microsoft.VisualStudio.Web.CodeGenerators.Mvc/2.1.5": {
-      "sha512": "fsmiUU9BCA/r2tC34jwwzFIbyR3VWwg/CKtvZ9/mL6YktQ+lVCUqjqkRs8Mh6oxD4jSknrmBPE0m84ynYm6RMg==",
+      "sha512": "WkTJ/nW7R5qADbvLfZhyP8036nYbNYd6CgZUwFld0R0Kd3dmrTDtVpqfdU7uC+xwRlEga4hyeh/lSKySa+8U0g==",
       "type": "package",
       "path": "microsoft.visualstudio.web.codegenerators.mvc/2.1.5",
       "files": [
@@ -12378,23 +12378,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\CODE\\.nuget\\packages\\": {},
+    "C:\\Users\\vlopi\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Bioskopsaadminom\\BioskopApp\\BioskopApp\\BioskopApp.csproj",
+      "projectUniqueName": "H:\\GIT PROJEKAT BIOSKOP\\Bioskop-Projekat\\BioskopApp\\BioskopApp\\BioskopApp.csproj",
       "projectName": "BioskopApp",
-      "projectPath": "E:\\Bioskopsaadminom\\BioskopApp\\BioskopApp\\BioskopApp.csproj",
-      "packagesPath": "C:\\Users\\CODE\\.nuget\\packages\\",
-      "outputPath": "E:\\Bioskopsaadminom\\BioskopApp\\BioskopApp\\obj\\",
+      "projectPath": "H:\\GIT PROJEKAT BIOSKOP\\Bioskop-Projekat\\BioskopApp\\BioskopApp\\BioskopApp.csproj",
+      "packagesPath": "C:\\Users\\vlopi\\.nuget\\packages\\",
+      "outputPath": "H:\\GIT PROJEKAT BIOSKOP\\Bioskop-Projekat\\BioskopApp\\BioskopApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\CODE\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\vlopi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

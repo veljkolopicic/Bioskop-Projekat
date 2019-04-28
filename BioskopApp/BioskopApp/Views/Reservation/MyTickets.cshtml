@@ -1,0 +1,59 @@
+﻿@model List<BioskopApp.Data.Reservation>
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<h2>Rezervisane karte</h2>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th>
+                Ime filma
+            </th>
+            <th>
+                Datum projekcije
+            </th>
+            <th>
+                Vreme projekcije
+            </th>
+            <th>
+                Ukupan broj rezervisanih karata
+            </th>
+            <th>
+                Cena pojedinačne karte
+            </th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProgramOfEvents.Movie.Name)
+                </td>
+                <td>
+                    @{var formateddate = item.ProgramOfEvents.Date.ToString("dd MMMM yyyy");}
+                    @Html.DisplayFor(modelItem => formateddate)
+                </td>
+                <td>
+                    @{var formateddate2 = item.ProgramOfEvents.Time.ToString("hh:mm tt");}
+                    @Html.DisplayFor(modelItem => formateddate2)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NumberOfTickets)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProgramOfEvents.Price)
+                </td>
+                <td>
+                    <a asp-action="Delete" asp-route-id="@item.ID">Otkaži</a> |
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+

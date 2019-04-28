@@ -2,11 +2,14 @@
 @model BioskopApp.Data.ProgramOfEvents
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Kreiraj događaj";
     var movies = ViewData["Movies"] as List<Movie>;
 }
 
-<h2>Kreiraj dogadjaj</h2>
+<h2>Kreiraj događaj</h2>
+<br/>
+<br/>
+
 
 <h4>Program repertoara</h4>
 <hr />
@@ -15,7 +18,7 @@
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="MovieId" class="control-label"></label>
+                <label asp-for="MovieId" class="control-label">Ime filma</label>
                 <select asp-for="MovieId">
 
                     @foreach (var movie in movies)
@@ -27,34 +30,34 @@
                 </select>
             </div>
                 <div class="form-group">
-        <label asp-for="Date" class="control-label"></label>
+        <label asp-for="Date" class="control-label">Datum projekcije</label>
         <input type="date" asp-for="Date" class="form-control" />
         <span asp-validation-for="Date" class="text-danger"></span>
     </div>
             <div class="form-group">
-                <label asp-for="Time" class="control-label"></label>
+                <label asp-for="Time" class="control-label">Vreme</label>
                 <input type="time" asp-for="Time" class="form-control" />
                 <span asp-validation-for="Time" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Tickets" class="control-label"></label>
+                <label asp-for="Tickets" class="control-label">Ukupan broj karata</label>
                 <input asp-for="Tickets" class="form-control" />
                 <span asp-validation-for="Tickets" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Price" class="control-label"></label>
+                <label asp-for="Price" class="control-label">Cena pojedinačne karte</label>
                 <input asp-for="Price" class="form-control" />
                 <span asp-validation-for="Price" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-default" />
+                <input type="submit" value="Kreiraj događaj" class="btn btn-default" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Povratak na listu kreiranih događaja</a>
 </div>
 
 @section Scripts {

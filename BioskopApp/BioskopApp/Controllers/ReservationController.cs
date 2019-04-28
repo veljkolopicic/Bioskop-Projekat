@@ -32,7 +32,10 @@ namespace BioskopApp.Controllers
                                  .Where(r => r.ProgramOfEvents.ID == pr.ID)
                                  .Select(r => r.NumberOfTickets).Sum();
             }
-            return View(program);
+
+            var program1 = program.Where(p => p.Tickets > 0 && (p.Date > DateTime.Now|| 
+                              p.Date== DateTime.Now && p.Time.Hour > DateTime.Now.Hour));
+            return View(program1);
         }
 
         public IActionResult Reserve(int? id)
@@ -75,7 +78,53 @@ namespace BioskopApp.Controllers
             _context.SaveChanges();
             
 
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction(nameof(MyTickets));
+        }
+
+        public async Task<IActionResult> MyTickets()
+        {
+         
+            var user = await _userManager.GetUserAsync(HttpContext.User);
+           
+            var reserved =_context.Reservations.Include(r => r.ProgramOfEvents)
+                .Include(r=> r.User)
+                .Include(r=>r.ProgramOfEvents.Movie)
+                .Where(_res => _res.User.Id == user.Id 
+                      && (_res.ProgramOfEvents.Date > DateTime.Now 
+                          || _res.ProgramOfEvents.Date == DateTime.Now && _res.ProgramOfEvents.Time.Hour > DateTime.Now.Hour) ).ToList();
+            return View(reserved);
+        }
+
+        public IActionResult Delete(int id)
+        {
+            var forDelete =_context.Reservations.Include(r => r.ProgramOfEvents).FirstOrDefault(r => r.ID == id);
+            if (forDelete == null)
+            {
+                return RedirectToAction(nameof(MyTickets));
+            }
+
+            if (forDelete.ProgramOfEvents.Date > DateTime.Now)
+            {
+                _context.Reservations.Remove(forDelete);
+                _context.SaveChanges();
+            }
+            return RedirectToAction(nameof(MyTickets));
+
+        }
+
+
+        public async Task<IActionResult> ReservedTickets()
+        {
+
+            var user = await _userManager.GetUserAsync(HttpContext.User);
+
+            var reserved = _context.Reservations.Include(r => r.ProgramOfEvents)
+                .Include(r => r.User)
+                .Include(r => r.ProgramOfEvents.Movie)
+                .Where(_res =>_res.ProgramOfEvents.Date > DateTime.Now
+                                   || _res.ProgramOfEvents.Date == DateTime.Now && _res.ProgramOfEvents.Time.Hour > DateTime.Now.Hour).ToList()
+                .GroupBy(r => r.ProgramOfEvents);
+            return View(reserved);
         }
     }
 }

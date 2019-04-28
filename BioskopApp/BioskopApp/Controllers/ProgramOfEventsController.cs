@@ -130,7 +130,7 @@ namespace BioskopApp.Controllers
                 return NotFound();
             }
 
-            var programOfEvents = await _context.ProgramOfEvents
+            var programOfEvents = await _context.ProgramOfEvents.Include(pr => pr.Movie)
                 .FirstOrDefaultAsync(m => m.ID == id);
             if (programOfEvents == null)
             {
