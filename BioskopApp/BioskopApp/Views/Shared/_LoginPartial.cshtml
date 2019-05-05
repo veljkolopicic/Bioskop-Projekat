@@ -11,18 +11,18 @@
         <i class="fas fa-laugh-wink"></i>
         </a>
         <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-        <a class="dropdown-item"  id="profile" asp-area="Identity" asp-page="/Account/Manage/Index">
-            <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-            <form method="post" class="navbar-right">
-                    <button type="submit" class="dropdown-item">Profil</button> 
-            </form>
-        </a>
-        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-            <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-            <form asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })" method="post" id="logoutForm" class="navbar-right">
-                <button type="submit" id="logout-button" class="dropdown-item">Odjavite se</button>
-            </form>
-        </a>
+            <a class="dropdown-item" id="profile" href="#" data-toggle="modal" data-target="#logoutModal">
+                <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                <form method="post" class="navbar-right" asp-area="Identity" asp-page="/Account/Manage/Index">
+                    <button type="submit" class="dropdown-item">Profil</button>
+                </form>
+            </a>
+            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                <form asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })" method="post" id="logoutForm" class="navbar-right">
+                    <button type="submit" id="logout-button" class="dropdown-item">Odjavite se</button>
+                </form>
+            </a>
         </div>
     </li>
 }
@@ -30,7 +30,8 @@ else
 {
     <ul class="nav navbar-nav navbar-right">
         <li><a asp-area="Identity" asp-page="/Account/Register">Registrujte se</a></li>
-        <li><a asp-area="Identity" asp-page="/Account/Login">Ulogujte se</a></li>
+        <li><a asp-area="Identity" asp-page="/Account/Login" style="padding-left: 15px">Ulogujte se</a></li>
+        
     </ul>
 }
 

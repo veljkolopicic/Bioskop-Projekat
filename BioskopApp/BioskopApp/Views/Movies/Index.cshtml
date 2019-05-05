@@ -3,55 +3,76 @@
 @{
     ViewData["Title"] = "Index";
 }
-<div class="container-fluid">
 
-    <!-- Page Heading -->
-    <!-- DataTales Example -->
-    <div class="card shadow mb-4">
-    <div class="card-header py-3">
-        <h6 class="m-0 font-weight-bold text-primary">Rezervisane karte</h6>
-    </div>
-    <p>
-        <a asp-action="Create">Create New</a>
-    </p>
-    <div class="card-body">
-        <div class="row">
-            <div class="table-responsive">
-            <table class="table table-bordered table-large-text" id="dataTable" width="100%" cellspacing="0">
-                <thead>
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+
+        <!-- End of Topbar -->
+
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+
+          <!-- Page Heading -->
+          <!-- DataTales Example -->
+          <div class="card shadow mb-4">
+            <div class="card-header py-3">
+              <h6 class="m-0 font-weight-bold text-primary">Repertoar filmova</h6>
+            </div>
+            <div class="card-body">
+            <p>
+                <a asp-action="Create" class="btn btn-success btn-icon-split">
+                <span class="icon text-white-50">
+                    <i class="fas fa-check"></i>
+                </span>
+                <span class="text">Novi film</span>
+                </a>
+            </p>
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
                     <tr>
                         <th>
-                            @Html.DisplayNameFor(model => model.Name)
+                            Naziv
                         </th>
+                        <!--
                         <th>
                             @Html.DisplayNameFor(model => model.Image)
-                        </th>
+                        </th>                        
                         <th>
                             @Html.DisplayNameFor(model => model.Highlighted)
                         </th>
+                        !-->
                         <th>
-                            @Html.DisplayNameFor(model => model.Description)
+                            Kratki opis
                         </th>
                         <th>
-                            @Html.DisplayNameFor(model => model.Trailer)
+                            Trejler
                         </th>
                         <th>
-                            @Html.DisplayNameFor(model => model.LongDescription)
+                            Opis
                         </th>
                         <th>
-                            @Html.DisplayNameFor(model => model.ImageRepertoar)
+                            Slika
                         </th>
                         <th></th>
                     </tr>
-                </thead>
-                <tbody>
-            @foreach (var item in Model) {
+                  </thead>
+                  <tbody>
+                    @foreach (var item in Model) {
                     <tr>
                         <td>
                             <div class="table_content">
                                 @Html.DisplayFor(modelItem => item.Name)
                             </div>
                         </td>
+                        <!--
                         <td>
                             <div class="table_content">
                             @Html.DisplayFor(modelItem => item.Image)
@@ -62,13 +83,14 @@
                             @Html.DisplayFor(modelItem => item.Highlighted)
                             </div>
                         </td>
+                        !-->
                         <td>
                             <div class="table_content">
                             @Html.DisplayFor(modelItem => item.Description)
                             </div>
                         </td>
                         <td>
-                            <div class="table_content">
+                            <div class="table_content table_trailer">
                             @Html.DisplayFor(modelItem => item.Trailer)
                             </div>
                         </td>
@@ -78,19 +100,48 @@
                             </div>
                         </td>
                         <td>
-                            <div class="table_content">
-                            @Html.DisplayFor(modelItem => item.ImageRepertoar)
+                            <div class="table_content table_image">
+                                <img src="@Html.DisplayFor(modelItem => item.ImageRepertoar)" />
                             </div>
                         </td>
                         <td>
-                            <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
-                            <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
-                            <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+                            <a asp-action="Edit" asp-route-id="@item.ID" class="btn btn-success btn-icon-split">
+                            <span class="icon text-white-50">
+                                <i class="fas fa-check"></i>
+                            </span>
+                            <span class="text">Izmena</span>
+                            </a>
+                            <div class="my-2"></div>
+                            <a asp-action="Details" asp-route-id="@item.ID" class="btn btn-info btn-icon-split">
+                            <span class="icon text-white-50">
+                                <i class="fas fa-info-circle"></i>
+                            </span>
+                            <span class="text">Detalji</span>
+                            </a>
+                            <div class="my-2"></div>
+                            <a asp-action="Delete" asp-route-id="@item.ID" class="btn btn-danger btn-icon-split">
+                            <span class="icon text-white-50">
+                                <i class="fas fa-trash"></i>
+                            </span>
+                            <span class="text">Brisanje</span>
+                            </a>
                         </td>
                     </tr>
             }
-                </tbody>
-        </table>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- /.container-fluid -->
+
+      </div>
+      <!-- End of Main Content -->
+
     </div>
-</div>
-</div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->

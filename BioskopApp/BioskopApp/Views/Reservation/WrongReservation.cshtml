@@ -1,0 +1,61 @@
+﻿@model BioskopApp.Data.Reservation
+
+@{
+    ViewData["Title"] = "  Pogrešna rezervacija";
+    Layout = "_Layout";
+}
+
+<!-- Page Wrapper -->
+<div id="wrapper">
+
+<!-- Content Wrapper -->
+<div id="content-wrapper" class="d-flex flex-column">
+
+    <!-- Main Content -->
+    <div id="content">
+
+        <!-- End of Topbar -->
+
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+
+            <!-- Page Heading -->
+            <!-- DataTales Example -->
+            <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                    <h2 class="m-0 font-weight-bold text-primary">@ViewData["Title"]</h2>
+                </div>
+
+                <br />
+                <h4 style="padding-left: 20px; padding-top: 20px">@ViewData["Message"]</h4>
+                <br/>
+                <br/>
+                <br/>
+                <div style="text-align: justify; padding-top: 20px; font-size: 130%; color: crimson; padding-left: 20px" >
+                    <b>Uneli ste negativan broj karata za rezervaciju ili ste rezervisali više karata nego što je moguće.
+                    </b>
+                </div>
+                <div style="text-align: justify; font-size: 130%; color: black; padding-left: 20px;">
+                    <b>
+                        Vratite se na rezervacije i pokušajte ponovo! Hvala
+                    </b>
+                </div>
+                <div>
+                    <br />
+                    <br />
+                </div>
+                <div>
+                    <div style="padding-left: 20px; padding-bottom: 20px;">
+                        <a asp-action="Index" class="btn btn-secondary btn-icon-split">
+                            <span class="icon text-white-50">
+                                <i class="fas fa-arrow-left"></i>
+                            </span>
+                            <span class="text">Nazad na listu</span>
+                        </a>       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

@@ -71,7 +71,7 @@ namespace BioskopApp.Controllers
 
             if (numberOfTickets < reservation.NumberOfTickets || reservation.NumberOfTickets <=0)
             {
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(WrongReservation));
             }
 
             _context.Reservations.Add(reservation);
@@ -79,6 +79,13 @@ namespace BioskopApp.Controllers
             
 
             return RedirectToAction(nameof(MyTickets));
+        }
+
+        public IActionResult WrongReservation()
+        {
+            ViewData["Message"] = "Greška u rezervaciji.";
+
+            return View();
         }
 
         public async Task<IActionResult> MyTickets()

@@ -5,60 +5,95 @@
     ViewData["Title"] = "Edit";
     var movies = ViewData["Movies"] as List<Movie>;
 }
+  <!-- Page Wrapper -->
+  <div id="wrapper">
 
-<h2>Izmeni događaj</h2>
-<br/>
-<br/>
-<h4>Repertoar</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="ID" />
-            <div class="form-group">
-                <label asp-for="Movie" class="control-label">Ime filma</label>
-                <select asp-for="MovieId">
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
 
-                    @foreach (var movie in movies)
-                    { 
-                        <option value="@movie.ID">@movie.Name</option>
-                    }
+        <!-- Main Content -->
+        <div id="content">
+
+            <!-- End of Topbar -->
+
+            <!-- Begin Page Content -->
+            <div class="container-fluid">
+
+                <!-- Page Heading -->
+                <!-- DataTales Example -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h6 class="m-0 font-weight-bold text-primary">Promena projekcije</h6>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <form asp-action="Edit">
+                                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                            <input type="hidden" asp-for="ID" />
+                                            <div class="form-group">
+                                                <label asp-for="Movie" class="control-label">Ime filma</label>
+                                                <select class="form-control" asp-for="MovieId">
+
+                                                    @foreach (var movie in movies)
+                                                    { 
+                                                        <option value="@movie.ID">@movie.Name</option>
+                                                    }
 
 
-                </select>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label asp-for="Date" class="control-label">Datum projekcije</label>
+                                                <input type="date" asp-for="Date" class="form-control" />
+                                                <span asp-validation-for="Date" class="text-danger"></span>
+                                            </div>
+                                            <div class="form-group">
+                                                <label asp-for="Time" class="control-label">Vreme</label>
+                                                <input type="time" asp-for="Time" class="form-control" />
+                                                <span asp-validation-for="Time" class="text-danger"></span>
+                                            </div>
+                                            <div class="form-group">
+                                                <label asp-for="Tickets" class="control-label">Ukupan broj karata</label>
+                                                <input asp-for="Tickets" class="form-control" />
+                                                <span asp-validation-for="Tickets" class="text-danger"></span>
+                                            </div>
+                                            <div class="form-group">
+                                                <label asp-for="Price" class="control-label">Cena pojedinačne karte</label>
+                                                <input asp-for="Price" class="form-control" />
+                                                <span asp-validation-for="Price" class="text-danger"></span>
+                                            </div>
+                                            <div class="form-group">
+                                                <a class="btn btn-success btn-icon-split">
+                                                    <span class="icon text-white-50">
+                                                        <i class="fas fa-check"></i>
+                                                    </span>
+                                                    <input class="btn btn-success" type="submit" value="Snimi"/>
+                                                </a> 
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <a asp-action="Index" class="btn btn-secondary btn-icon-split">
+                                        <span class="icon text-white-50">
+                                            <i class="fas fa-arrow-left"></i>
+                                        </span>
+                                        <span class="text">Nazad na listu</span>
+                                    </a>       
+                                </div>
+
+                                @section Scripts {
+                                    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="Date" class="control-label">Datum projekcije</label>
-                <input type="date" asp-for="Date" class="form-control" />
-                <span asp-validation-for="Date" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Time" class="control-label">Vreme</label>
-                <input type="time" asp-for="Time" class="form-control" />
-                <span asp-validation-for="Time" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Tickets" class="control-label">Ukupan broj karata</label>
-                <input asp-for="Tickets" class="form-control" />
-                <span asp-validation-for="Tickets" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Price" class="control-label">Cena pojedinačne karte</label>
-                <input asp-for="Price" class="form-control" />
-                <span asp-validation-for="Price" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Sačuvaj izmene" class="btn btn-default" />
-            </div>
-        </form>
+        </div>
     </div>
-</div>
-
-<div>
-    <a asp-action="Index">Nazad na listu događaja</a>
-</div>
-
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
+  </div>

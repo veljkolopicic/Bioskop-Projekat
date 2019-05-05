@@ -4,69 +4,22 @@
     List<Movie> movies = (ViewData["Movies"] as IEnumerable<Movie>).ToList();
     List<Movie> repertoar = (ViewData["Repertoar"] as List<Movie>);
 }
-<div class="container-fluid">
-<!--
-<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
-    <ol class="carousel-indicators">
+<div class="col-lg-12 mb-4">
+    <div class="card shadow mb-4">
+        <ul id="out-of-the-box-demo">
         @for (int i = 0; i < movies.Count(); i++)
         {
-            if (i == 0)
-            {
-                <li data-target="#myCarousel" data-slide-to="@i" class="active"></li>
-            }
-            else
-            {
-                <li data-target="#myCarousel" data-slide-to="@i" ></li>
-            }
+        <li>
+            <a href="#@movies[i].ID">
+                <img src="@movies[i].Image" alt="@movies[i].Name" title="@movies[i].Description"height="580"width="1920">
+            </a>
+        </li>
         }
-    </ol>
-    <div class="carousel-inner" role="listbox">
-        
-        @for (int i = 0; i < movies.Count(); i++)
-        {
-            if (i == 0)
-            {
-                <div class="item active">
-                    <img src="@movies[i].Image" alt="@movies[i].Name" class="img-responsive"/>
-                    <div class="carousel-caption" role="option">
-                        <p>
-                            @movies[i].Description
-                            <a class="btn btn-default" href="#@movies[i].ID">
-                                Saznaj vise
-                            </a>
-                        </p>
-                    </div>
-                </div>
-            }
-            else
-            {
-                <div class="item">
-                    <img src="@movies[i].Image" alt="@movies[i].Name" width="1920" height="1080" class="img-responsive"/>
-                    <div class="carousel-caption" role="option">
-                        <p>
-                            @movies[i].Description
-                            <a class="btn btn-default" href="#@movies[i].ID">
-                                Saznaj više
-                            </a>
-                        </p>
-                    </div>
-                </div>
-            }
-        
-        }
-    </div>
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
+    </ul>
 </div>
-!-->
+
 <div class="d-sm-flex align-items-center justify-content-between mb-4">
-    <h1 class="h3 mb-2 text-gray-800">Repertoar filmova</h1>
+    <h1 class="h3 mb-2 text-gray-800" style="padding-top: 30px;">Repertoar filmova</h1>
 </div>
     @foreach (var movie in repertoar)
     {
@@ -74,7 +27,7 @@
             <div class="col-lg-6 mb-4" id="@movie.ID">
                 <div class="card shadow mb-4">
                     <div class="card-header py-3">
-                        <h6 class="m-0 font-weight-bold text-primary">About @movie.Name</h6>
+                        <h6 class="m-0 font-weight-bold text-primary">Opis filma @movie.Name</h6>
                     </div>
                     <div class="card-body">
                         <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" src="@movie.ImageRepertoar"/>
@@ -85,7 +38,7 @@
             <div class="col-lg-6 mb-4" id="@movie.ID">
                 <div class="card shadow mb-4">
                     <div class="card-header py-3">
-                        <h6 class="m-0 font-weight-bold text-primary">@movie.Name trailer</h6>
+                        <h6 class="m-0 font-weight-bold text-primary">@movie.Name trejler</h6>
                     </div>
                     <div class="card-body">
                         <iframe class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width:100%; min-height:300px;" src="@movie.Trailer" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -95,3 +48,7 @@
         </div>
     }
 </div>
+
+<script>
+    jQuery('#out-of-the-box-demo').slippry();
+</script>

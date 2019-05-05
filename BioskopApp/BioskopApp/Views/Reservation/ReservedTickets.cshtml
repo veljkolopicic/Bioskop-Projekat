@@ -5,47 +5,78 @@
     Layout = "_Layout";
 }
 
-<h2>Rezervisane karte po dogadjajima</h2>
+  <!-- Page Wrapper -->
+  <div id="wrapper">
 
-@foreach (var ev in Model)
-{
-    var formateddate = ev.Key.Date.ToString("dd MMMM yyyy");
-    var formatedTime = ev.Key.Time.ToString("HH:mm tt");
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
 
-    <h3>@ev.Key.Movie.Name, @formateddate, @formatedTime</h3>
-    <table class="table">
-        <thead>
-            <tr>
-                <th>
-                    Korisnik
-                </th>
-                <th>
-                    Broj karata
-                </th>
-                <th>
-                    Cena pojedinačne karte
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-        @foreach (var res in ev)
-        {
+      <!-- Main Content -->
+      <div id="content">
 
-      
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => res.User.UserName)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => res.NumberOfTickets)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => res.ProgramOfEvents.Price)
-                </td>
-            </tr>
+        <!-- End of Topbar -->
 
-      
-        }
-        </tbody>
-    </table>
-}
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+
+          <!-- Page Heading -->
+          <!-- DataTales Example -->
+          <div class="card shadow mb-4">
+            <div class="card-header py-3">
+              <h6 class="m-0 font-weight-bold text-primary">Rezervisane karte</h6>
+            </div>
+            <div class="card-body">
+                @foreach (var ev in Model)
+                {
+                    var formateddate = ev.Key.Date.ToString("dd MMMM yyyy");
+                    var formatedTime = ev.Key.Time.ToString("HH:mm tt");
+
+                    <h6>@ev.Key.Movie.Name, @formateddate, @formatedTime</h6>
+                    <div class="table-responsive">
+                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Korisnik
+                                    </th>
+                                    <th>
+                                        Broj karata
+                                    </th>
+                                    <th>
+                                        Cena pojedinačne karte
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            @foreach (var res in ev)
+                            {
+
+                        
+                                <tr>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => res.User.UserName)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => res.NumberOfTickets)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => res.ProgramOfEvents.Price)
+                                    </td>
+                                </tr>
+
+                        
+                            }
+                            </tbody>
+                        </table>
+                        </div>
+
+                    }
+
+            </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+

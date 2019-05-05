@@ -9,69 +9,67 @@
     <!-- Page Heading -->
     <!-- DataTales Example -->
     <div class="card shadow mb-4">
-        <div class="card-header py-3">
-            <h6 class="m-0 font-weight-bold text-primary">Rezervisane karte</h6>
-        </div>
-        <div class="card-body">
-            <div class="row">
-                <div class="table-responsive">
-                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                        <thead>
-                        <tr>
-                            <th>
-                                Ime filma
-                            </th>
-                            <th>
-                                Datum projekcije
-                            </th>
-                            <th>
-                                Vreme projekcije
-                            </th>
-                            <th>
-                                Ukupan broj rezervisanih karata
-                            </th>
-                            <th>
-                                Cena pojedinačne karte
-                            </th>
-                            <th></th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        @foreach (var item in Model)
-                        {
-                            <tr>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.ProgramOfEvents.Movie.Name)
-                                </td>
-                                <td>
-                                    @{var formateddate = item.ProgramOfEvents.Date.ToString("dd MMMM yyyy");}
-                                    @Html.DisplayFor(modelItem => formateddate)
-                                </td>
-                                <td>
-                                    @{var formateddate2 = item.ProgramOfEvents.Time.ToString("hh:mm tt");}
-                                    @Html.DisplayFor(modelItem => formateddate2)
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.NumberOfTickets)
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.ProgramOfEvents.Price)
-                                </td>
-                                <td>
-                                    <a asp-action="Delete" asp-route-id="@item.ID" class="btn btn-danger btn-icon-split">
-                                        <span class="icon text-white-50">
-                                            <i class="fas fa-trash"></i>
-                                        </span>
-                                        <span class="text">Otkaži</span>
-                                    </a>
-                                </td>
-                            </tr>
-                        }
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">Rezervisane karte</h6>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                <tr>
+                    <th>
+                        Ime filma
+                    </th>
+                    <th>
+                        Datum projekcije
+                    </th>
+                    <th>
+                        Vreme projekcije
+                    </th>
+                    <th>
+                        Ukupan broj rezervisanih karata
+                    </th>
+                    <th>
+                        Cena pojedinačne karte
+                    </th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ProgramOfEvents.Movie.Name)
+                        </td>
+                        <td>
+                            @{var formateddate = item.ProgramOfEvents.Date.ToString("dd MMMM yyyy");}
+                            @Html.DisplayFor(modelItem => formateddate)
+                        </td>
+                        <td>
+                            @{var formateddate2 = item.ProgramOfEvents.Time.ToString("hh:mm tt");}
+                            @Html.DisplayFor(modelItem => formateddate2)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.NumberOfTickets)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ProgramOfEvents.Price)
+                        </td>
+                        <td>
+                            <a asp-action="Delete" asp-route-id="@item.ID" class="btn btn-danger btn-icon-split">
+                                <span class="icon text-white-50">
+                                <i class="fas fa-trash"></i>
+                                </span>
+                                <span class="text">Otkaži</span>
+                            </a>
+                        </td>
+                    </tr>
+                }
+                </tbody>
+            </table>
         </div>
     </div>
 </div>
-
+    </div></div>

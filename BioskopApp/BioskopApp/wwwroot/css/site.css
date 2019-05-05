@@ -14,6 +14,27 @@
 }
 
 .table_content {
-    max-height:50px;
+    max-height:122px;
     overflow: hidden;
+}
+
+.table_trailer {
+    max-width:50px;
+}
+
+td {
+    vertical-align: middle !important;
+}
+
+.table_image img {
+    width: 100px;
+}
+
+.long-description-movie {
+    min-height: 120px;
+}
+
+
+.sy-pager {
+    margin-bottom:13px;
 }

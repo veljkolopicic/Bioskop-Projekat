@@ -60,14 +60,15 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 }
 
 body {
-  margin: 0;
-  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #858796;
-  text-align: left;
-  background-color: #fff;
+    margin: 0;
+    font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #fff;
+    text-align: left;
+    background-color: #fff;
+    color:inherit;
 }
 
 [tabindex="-1"]:focus {
@@ -10365,15 +10366,15 @@ button.bg-dark:focus {
 }
 
 .text-primary {
-  color: #4e73df !important;
+    color: #b92210 !important;
 }
 
 a.text-primary:hover, a.text-primary:focus {
-  color: #224abe !important;
+    color: #b92210 !important;
 }
 
 .text-secondary {
-  color: #858796 !important;
+    color: #b92210 !important;
 }
 
 a.text-secondary:hover, a.text-secondary:focus {
@@ -10678,10 +10679,10 @@ a:focus {
 }
 
 .bg-gradient-primary {
-  background-color: #4e73df;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #4e73df), to(#224abe));
-  background-image: linear-gradient(180deg, #4e73df 10%, #224abe 100%);
-  background-size: cover;
+    background-color: #4e73df;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #4e73df), to(#224abe));
+    background-image: linear-gradient(180deg, #930505 10%, #DC0E0E 100%);
+    background-size: cover;
 }
 
 .bg-gradient-success {
@@ -11350,7 +11351,7 @@ a:focus {
 }
 
 .sidebar-light .sidebar-heading {
-  color: #b7b9cc;
+    color: #b8c7f2;
 }
 
 .sidebar-light .nav-item .nav-link {
@@ -11694,6 +11695,9 @@ form.user .btn-user {
   box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
 }
 
+.zvezda {
+    color: #f4f5f8;
+}
 .error {
   color: #5a5c69;
   font-size: 7rem;
