@@ -113,7 +113,7 @@ namespace BioskopApp.Controllers
         }
 
 
-        public async Task<IActionResult> ReservedTickets()
+        public IActionResult ReservedTickets()
         { 
 
             var reserved = _context.Reservations.Include(r => r.ProgramOfEvents)

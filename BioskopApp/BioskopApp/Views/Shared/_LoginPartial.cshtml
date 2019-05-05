@@ -5,16 +5,26 @@
 
 @if (SignInManager.IsSignedIn(User))
 {
-    <form asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })" method="post" id="logoutForm" class="navbar-right">
-        <ul class="nav navbar-nav navbar-right">
-            <li>
-                <a asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Pozdrav @UserManager.GetUserName(User)!</a>
-            </li>
-            <li>
-                <button type="submit" class="btn btn-link navbar-btn navbar-link">Odjavite se</button>
-            </li>
-        </ul>
-    </form>
+    <li class="nav-item dropdown no-arrow">
+        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        <span class="mr-2 d-none d-lg-inline text-gray-600 small">@UserManager.GetUserName(User)</span>
+        <i class="fas fa-laugh-wink"></i>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+        <a class="dropdown-item"  id="profile" asp-area="Identity" asp-page="/Account/Manage/Index">
+            <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+            <form method="post" class="navbar-right">
+                    <button type="submit" class="dropdown-item">Profil</button> 
+            </form>
+        </a>
+        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+            <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+            <form asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })" method="post" id="logoutForm" class="navbar-right">
+                <button type="submit" id="logout-button" class="dropdown-item">Odjavite se</button>
+            </form>
+        </a>
+        </div>
+    </li>
 }
 else
 {
@@ -23,3 +33,14 @@ else
         <li><a asp-area="Identity" asp-page="/Account/Login">Ulogujte se</a></li>
     </ul>
 }
+
+    <!--
+    <li class="nav-item dropdown no-arrow">
+        <form asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })" method="post" id="logoutForm" class="navbar-right">
+            <a asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Pozdrav @UserManager.GetUserName(User)!</a>
+            <button type="submit" class="btn btn-link navbar-btn navbar-link">Odjavite se</button>
+        </form>
+    </li>
+    
+}
+!-->

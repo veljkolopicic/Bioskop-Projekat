@@ -4,7 +4,8 @@
     List<Movie> movies = (ViewData["Movies"] as IEnumerable<Movie>).ToList();
     List<Movie> repertoar = (ViewData["Repertoar"] as List<Movie>);
 }
-
+<div class="container-fluid">
+<!--
 <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
     <ol class="carousel-indicators">
         @for (int i = 0; i < movies.Count(); i++)
@@ -63,32 +64,34 @@
         <span class="sr-only">Next</span>
     </a>
 </div>
-<br/>
-<br/>
-<h1>Repertoar filmova</h1>
-<br/>
-<div>
+!-->
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <h1 class="h3 mb-2 text-gray-800">Repertoar filmova</h1>
+</div>
     @foreach (var movie in repertoar)
     {
-        <div id="@movie.ID">
-            <br/>
-            <br/>
-            <br/>
-            <h2 >@movie.Name</h2>
-            <img src="@movie.ImageRepertoar" width="400" height="600" style="float: left;"/>
-            <p style="float: right; width: 400px; height: 600px;">@movie.LongDescription </p>
-            <br/>
+        <div class="row">
+            <div class="col-lg-6 mb-4" id="@movie.ID">
+                <div class="card shadow mb-4">
+                    <div class="card-header py-3">
+                        <h6 class="m-0 font-weight-bold text-primary">About @movie.Name</h6>
+                    </div>
+                    <div class="card-body">
+                        <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" src="@movie.ImageRepertoar"/>
+                        <p>@movie.LongDescription</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4" id="@movie.ID">
+                <div class="card shadow mb-4">
+                    <div class="card-header py-3">
+                        <h6 class="m-0 font-weight-bold text-primary">@movie.Name trailer</h6>
+                    </div>
+                    <div class="card-body">
+                        <iframe class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width:100%; min-height:300px;" src="@movie.Trailer" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
         </div>
-       
-        <div>
-            &nbsp;
-            <br/>
-            
-            <iframe style="margin: 40px; margin-left:200px" width="560" height="315" src="@movie.Trailer" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <br/>
-            <br/>
-            <br/>
-        </div>
-        
     }
 </div>

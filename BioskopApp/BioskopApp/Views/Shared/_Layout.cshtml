@@ -1,92 +1,188 @@
 ﻿<!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - BioskopApp</title>
+    <title>@ViewData["Title"] - Bioskop</title>
 
     <environment include="Development">
-        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        
+        <!-- staro  
+        <link rel="stylesheet" href="~/css/site.css" />
+        <link rel="stylesheet" href="~/css/bootstrap-carousel.css" />
+        !-->
+        <!-- Custom fonts for this template-->
+        <link href="~/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+        <!-- Custom styles for this template-->
+        <link href="~/css/sb-admin-2.css" rel="stylesheet">
         <link rel="stylesheet" href="~/css/site.css" />
     </environment>
+    <!-- staro
     <environment exclude="Development">
         <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
               asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     </environment>
+    !-->
+
 </head>
-<body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">BioskopApp</a>
+
+<body id="page-top">
+    <div class id="wrapper">
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-icon rotate-n-15">
+                    <i class="fas fa-film"></i>
+                </div>
+                <div class="sidebar-brand-text mx-3">Bioskop</div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item">
+                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">
+                    <i class="fas fa-fw fa-home"></i>
+                    <span>Početna stranica</span></a>
+            </li>
+            <hr class="sidebar-divider">
+            <div class="sidebar-heading">
+                Korisnici
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Početna stranica</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">O bioskopu</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Kontakt</a></li>
-                    @if (User.Identity.Name != "vlopicic@gmail.com")
-                    {
-                        <li><a asp-area="" asp-controller="Reservation" asp-action="Index">Rezervacija</a></li>
-                    }
-                    @if (User.Identity.IsAuthenticated && User.Identity.Name != "vlopicic@gmail.com")
-                    {
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item">
+                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="About">
+                    <i class="fas fa-fw fa-info-circle"></i>
+                    <span>O bioskopu</span></a>
+            </li>
 
-                        <li><a asp-area="" asp-controller="Reservation" asp-action="MyTickets">Rezervisane karte</a></li>
-                    }
-                    @if (User.Identity.IsAuthenticated && User.Identity.Name.Equals("vlopicic@gmail.com"))
-                    {
-                        <li><a asp-area="" asp-controller="Movies" asp-action="Index">Repertoar filmova</a></li>
-                        <li><a asp-area="" asp-controller="ProgramOfEvents" asp-action="Index">Kreiraj događaj</a></li>
-                        <li><a asp-area="" asp-controller="Reservation" asp-action="ReservedTickets">Rezervisane karte</a></li>
-                    }
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item">
+                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Contact">
+                    <i class="fas fa-fw fa-id-card"></i>
+                    <span>Kontakt</span></a>
+            </li>
+            @if (User.Identity.Name != "vlopicic@gmail.com") {
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item">
+                <a class="nav-link" asp-area="" asp-controller="Reservation" asp-action="Index">
+                    <i class="fas fa-fw fa-calendar-plus"></i>
+                    <span>Rezervacija</span></a>
+            </li>
+            } @if (User.Identity.IsAuthenticated && User.Identity.Name != "vlopicic@gmail.com") {
+            <!-- Nav Item - Dashboard -->
 
+            <li class="nav-item">
+                <a class="nav-link" asp-controller="Reservation" asp-action="MyTickets">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Rezervisane karte</span></a>
+            </li>
+            } @if (User.Identity.IsAuthenticated && User.Identity.Name.Equals("vlopicic@gmail.com")) {
+            <hr class="sidebar-divider">
+            <div class="sidebar-heading">
+                Admin
+            </div>
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Admin</span>
+                </a>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Administracija</h6>
+                        <a class="collapse-item" asp-area="" asp-controller="Movies" asp-action="Index">Repertoar filmova</a>
+                        <a class="collapse-item" asp-area="" asp-controller="ProgramOfEvents" asp-action="Index">Kreiraj događaj</a>
+                        <a class="collapse-item" asp-area="" asp-controller="Reservation" asp-action="ReservedTickets">Rezervisane karte</a>
+                    </div>
+                </div>
+            </li>
+            }
+            <hr class="sidebar-divider d-none d-md-block">
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+        </ul>
+        <partial name="_CookieConsentPartial" />
+        <div id="content-wrapper" class="d-flex flex-column">
+            <div class="content">
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
-                </ul>
-                <partial name="_LoginPartial" />
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+
+                        <div class="topbar-divider d-none d-sm-block"></div>
+
+                        <!-- Nav Item - User Information -->
+                        <partial name="_LoginPartial" />
+
+                    </ul>
+
+                </nav>
+                @RenderBody()
+                    <a class="scroll-to-top rounded" href="#page-top" style="display: none;">
+                        <i class="fas fa-angle-up"></i>
+                    </a>
+                    <footer class="sticky-footer bg-white">
+                    <div class="container my-auto">
+                        <div class="copyright text-center my-auto">
+                            <span>Copyright © Bioskop APP 2019</span>
+                        </div>
+                    </div>
+                </footer>
             </div>
         </div>
-    </nav>
 
-    <partial name="_CookieConsentPartial" />
+        <environment include="Development">
+            <script src="~/js/site.js" asp-append-version="true"></script>
 
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; 2019 - BioskopApp</p>
-        </footer>
+            <!-- Bootstrap core JavaScript-->
+            <script src="~/vendor/jquery/jquery.min.js"></script>
+            <script src="~/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+            <!-- Core plugin JavaScript-->
+            <script src="~/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+            <!-- Custom scripts for all pages-->
+            <script src="~/js/sb-admin-2.min.js"></script>
+
+            <!-- Page level plugins -->
+            <script src="~/vendor/chart.js/Chart.min.js"></script>
+
+        </environment>
+        <environment exclude="Development">
+            <!-- staro
+            <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"
+                    asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                    asp-fallback-test="window.jQuery"
+                    crossorigin="anonymous"
+                    integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT">
+            </script>
+            <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
+                    asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+                    asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                    crossorigin="anonymous"
+                    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
+            </script>
+            !-->
+
+            <script src="~/js/site.min.js" asp-append-version="true"></script>
+
+        </environment>
+
+        @RenderSection("Scripts", required: false)
     </div>
-
-    <environment include="Development">
-        <script src="~/lib/jquery/dist/jquery.js"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
-        <script src="~/js/site.js" asp-append-version="true"></script>
-    </environment>
-    <environment exclude="Development">
-        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"
-                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
-                asp-fallback-test="window.jQuery"
-                crossorigin="anonymous"
-                integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT">
-        </script>
-        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
-                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
-                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
-                crossorigin="anonymous"
-                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
-        </script>
-        <script src="~/js/site.min.js" asp-append-version="true"></script>
-    </environment>
-
-    @RenderSection("Scripts", required: false)
 </body>
+
 </html>
