@@ -18,8 +18,8 @@
     </ul>
 </div>
 
-<div class="d-sm-flex align-items-center justify-content-between mb-4">
-    <h1 class="h3 mb-2 text-gray-800" style="padding-top: 30px;">Repertoar filmova</h1>
+<div class="d-sm-flex align-items-center justify-content-between mb-4" style="padding-top: 50px;">
+    <h1 class="h3 mb-2 text-gray-800">Repertoar filmova</h1>
 </div>
     @foreach (var movie in repertoar)
     {
@@ -31,7 +31,7 @@
                     </div>
                     <div class="card-body">
                         <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" src="@movie.ImageRepertoar"/>
-                        <p>@movie.LongDescription</p>
+                        <p style="text-align:justify;">@movie.LongDescription</p>
                     </div>
                 </div>
             </div>

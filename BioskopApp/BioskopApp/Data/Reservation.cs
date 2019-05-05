@@ -14,7 +14,7 @@ namespace BioskopApp.Data
         public ProgramOfEvents ProgramOfEvents { get; set; }
         public IdentityUser User { get; set; }
 
-        [Range(1, maximum: 20, ErrorMessage = "Dozvoljeni su samo pozitivni brojevi!")]
+        [Range(1, maximum: 20, ErrorMessage = "Dozvoljeni su samo pozitivni brojevi!")]//ne radi range, niti required
         [Required(ErrorMessage = "Polje mora biti popunjeno!")]
         public int NumberOfTickets { get; set; }
     }

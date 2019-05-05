@@ -12235,11 +12235,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\VladaPrepravljeno\\BioskopApp\\BioskopApp.csproj",
+      "projectUniqueName": "F:\\DZONI\\Bioskopprepravljeno\\BioskopApp\\BioskopApp\\BioskopApp.csproj",
       "projectName": "BioskopApp",
-      "projectPath": "G:\\VladaPrepravljeno\\BioskopApp\\BioskopApp.csproj",
+      "projectPath": "F:\\DZONI\\Bioskopprepravljeno\\BioskopApp\\BioskopApp\\BioskopApp.csproj",
       "packagesPath": "C:\\Users\\vlopi\\.nuget\\packages\\",
-      "outputPath": "G:\\VladaPrepravljeno\\BioskopApp\\obj\\",
+      "outputPath": "F:\\DZONI\\Bioskopprepravljeno\\BioskopApp\\BioskopApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
