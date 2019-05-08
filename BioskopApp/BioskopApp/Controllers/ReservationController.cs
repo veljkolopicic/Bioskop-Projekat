@@ -34,17 +34,22 @@ namespace BioskopApp.Controllers
             }
 
             var program1 = program.Where(p => p.Tickets > 0 && (p.Date > DateTime.Now|| 
-                              p.Date== DateTime.Now && p.Time.Hour > DateTime.Now.Hour));
-            return View(program1);
+                              p.Date== DateTime.Now && p.Time.Hour > DateTime.Now.Hour)).OrderBy(p => p.Time);
+            return View(program1.OrderBy(p => p.Date));
         }
 
         public IActionResult Reserve(int? id)
         {
+            if (id == null)
+            {
+                return RedirectToAction(nameof(Index));
+            }
+
             Reservation reservation = new Reservation
             {
                 ProgramOfEvents =
                     _context.ProgramOfEvents.Include(pr => pr.Movie).FirstOrDefault(pr => pr.ID == id),
-                ProgramOfEventsId = id ?? 0
+                ProgramOfEventsId = id ?? 0 
             };
 
             reservation.ProgramOfEvents.Tickets  = reservation.ProgramOfEvents.Tickets - _context.Reservations
@@ -93,18 +98,18 @@ namespace BioskopApp.Controllers
          
             var user = await _userManager.GetUserAsync(HttpContext.User);
            
-            var reserved =_context.Reservations.Include(r => r.ProgramOfEvents)
+            var reserved = _context.Reservations.Include(r => r.ProgramOfEvents)
                 .Include(r=> r.User)
                 .Include(r=>r.ProgramOfEvents.Movie)
                 .Where(_res => _res.User.Id == user.Id 
                       && (_res.ProgramOfEvents.Date > DateTime.Now 
-                          || _res.ProgramOfEvents.Date == DateTime.Now && _res.ProgramOfEvents.Time.Hour > DateTime.Now.Hour) ).ToList();
+                          || _res.ProgramOfEvents.Date == DateTime.Now && _res.ProgramOfEvents.Time.Hour > DateTime.Now.Hour) ).OrderBy(r => r.ProgramOfEvents.Time).ToList();
             return View(reserved.OrderBy(r => r.ProgramOfEvents.Date).ToList());
         }
 
         public IActionResult Delete(int id)
         {
-            var forDelete =_context.Reservations.Include(r => r.ProgramOfEvents).FirstOrDefault(r => r.ID == id);
+            var forDelete = _context.Reservations.Include(r => r.ProgramOfEvents).FirstOrDefault(r => r.ID == id);
             if (forDelete == null)
             {
                 return RedirectToAction(nameof(MyTickets));
@@ -128,8 +133,8 @@ namespace BioskopApp.Controllers
                 .Include(r => r.ProgramOfEvents.Movie)
                 .Where(_res =>_res.ProgramOfEvents.Date > DateTime.Now
                                    || _res.ProgramOfEvents.Date == DateTime.Now && _res.ProgramOfEvents.Time.Hour > DateTime.Now.Hour).ToList()
-                .GroupBy(r => r.ProgramOfEvents);
-            return View(reserved.OrderBy(r =>r.Key.Date));
+                .GroupBy(r => r.ProgramOfEvents).OrderBy(r => r.Key.Time);
+            return View(reserved.OrderBy(r => r.Key.Date));
         }
     }
 }

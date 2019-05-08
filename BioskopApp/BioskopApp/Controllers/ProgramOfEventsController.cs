@@ -25,7 +25,7 @@ namespace BioskopApp.Controllers
         public async Task<IActionResult> Index()
         {
 
-            var prog = await _context.ProgramOfEvents.Include(p => p.Movie).OrderByDescending(p => p.Time).ToListAsync();
+            var prog = await _context.ProgramOfEvents.Include(p => p.Movie).OrderBy(p => p.Time).ToListAsync();
             return View(prog.OrderBy(r => r.Date));
 
         }

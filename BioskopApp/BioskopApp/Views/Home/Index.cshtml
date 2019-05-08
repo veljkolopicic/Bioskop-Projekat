@@ -1,6 +1,6 @@
 ﻿@using BioskopApp.Data
 @{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Početna stranica";
     List<Movie> movies = (ViewData["Movies"] as IEnumerable<Movie>).ToList();
     List<Movie> repertoar = (ViewData["Repertoar"] as List<Movie>);
 }
@@ -11,34 +11,34 @@
         {
         <li>
             <a href="#@movies[i].ID">
-                <img src="@movies[i].Image" alt="@movies[i].Name" title="@movies[i].Description"height="580"width="1920">
+                <img src="@movies[i].Image" alt="@movies[i].Name" title="@movies[i].Description" height="580" width="1920">
             </a>
         </li>
         }
-    </ul>
-</div>
+        </ul>
+    </div>
 
-<div class="d-sm-flex align-items-center justify-content-between mb-4" style="padding-top: 50px;">
+    <div class="d-sm-flex align-items-center justify-content-between mb-4" style="padding-top: 50px;">
     <h1 class="h3 mb-2 text-gray-800">Repertoar filmova</h1>
-</div>
+    </div>
     @foreach (var movie in repertoar)
     {
         <div class="row">
             <div class="col-lg-6 mb-4" id="@movie.ID">
                 <div class="card shadow mb-4">
                     <div class="card-header py-3">
-                        <h6 class="m-0 font-weight-bold text-primary">Opis filma @movie.Name</h6>
+                        <h6 class="m-0 ml-4 font-weight-bold text-primary">Opis filma @movie.Name</h6>
                     </div>
                     <div class="card-body">
                         <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" src="@movie.ImageRepertoar"/>
-                        <p style="text-align:justify;">@movie.LongDescription</p>
+                        <p style="text-align:justify; padding-left:20px; padding-right:20px;">@movie.LongDescription</p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-6 mb-4" id="@movie.ID">
                 <div class="card shadow mb-4">
                     <div class="card-header py-3">
-                        <h6 class="m-0 font-weight-bold text-primary">@movie.Name trejler</h6>
+                        <h6 class="m-0 ml-4 font-weight-bold text-primary">@movie.Name trejler</h6>
                     </div>
                     <div class="card-body">
                         <iframe class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width:100%; min-height:300px;" src="@movie.Trailer" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

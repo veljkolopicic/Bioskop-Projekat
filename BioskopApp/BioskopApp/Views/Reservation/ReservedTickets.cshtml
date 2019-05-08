@@ -23,7 +23,7 @@
           <!-- DataTales Example -->
           <div class="card shadow mb-4">
             <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary">Rezervisane karte</h6>
+              <h5 class="m-0 font-weight-bold text-primary">Rezervisane karte</h5>
             </div>
             <div class="card-body">
                 @foreach (var ev in Model)
@@ -31,7 +31,7 @@
                     var formateddate = ev.Key.Date.ToString("dd MMMM yyyy");
                     var formatedTime = ev.Key.Time.ToString("HH:mm tt");
 
-                    <h6>@ev.Key.Movie.Name, @formateddate, @formatedTime</h6>
+                    <h6 style="font-weight: bold; color: black;">@ev.Key.Movie.Name, @formateddate, @formatedTime</h6>
                     <div class="table-responsive">
                         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                             <thead>

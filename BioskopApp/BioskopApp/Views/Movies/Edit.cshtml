@@ -1,98 +1,103 @@
 ﻿@model BioskopApp.Data.Movie
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Izmeni";
 }
   <!-- Page Wrapper -->
-  <div id="wrapper">
+<div id="wrapper">
 
     <!-- Content Wrapper -->
     <div id="content-wrapper" class="d-flex flex-column">
 
-      <!-- Main Content -->
-      <div id="content">
+        <!-- Main Content -->
+        <div id="content">
 
-        <!-- End of Topbar -->
+            <!-- End of Topbar -->
 
-        <!-- Begin Page Content -->
-        <div class="container-fluid">
+            <!-- Begin Page Content -->
+            <div class="container-fluid">
 
-          <!-- Page Heading -->
-          <!-- DataTales Example -->
-          <div class="row">
-              <div class="col-md-6">
-          <div class="card shadow mb-4">
-            <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary">Izmena filma</h6>
-            </div>
-            <div class="card-body">
+                <!-- Page Heading -->
+                <!-- DataTales Example -->
                 <div class="row">
-                    <div class="col-md-12">
-                        <form asp-action="Edit">
-                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                            <input type="hidden" asp-for="ID" />
-                            <div class="form-group">
-                                <label asp-for="Name" class="control-label">Ime filma</label>
-                                <input asp-for="Name" class="form-control" />
-                                <span asp-validation-for="Name" class="text-danger"></span>
+                    <div class="col-md-6">
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="m-0 font-weight-bold text-primary">Izmena filma</h5>
                             </div>
-                            <div class="form-group">
-                                <label asp-for="Image" class="control-label">Slika</label>
-                                <input asp-for="Image" class="form-control" />
-                                <span asp-validation-for="Image" class="text-danger"></span>
-                            </div>
-                            <div class="form-group">
-                                <div class="checkbox">
-                                    <label>
-                                        <input asp-for="Highlighted" /> @Html.DisplayNameFor(model => model.Highlighted)
-                                    </label>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <form asp-action="Edit">
+                                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                            <input type="hidden" asp-for="ID" />
+                                            <div class="form-group">
+                                                <label asp-for="Name" class="control-label">Ime filma</label>
+                                                <input asp-for="Name" class="form-control" />
+                                                <span asp-validation-for="Name" class="text-danger"></span>
+                                            </div>
+                                            <div class="form-group">
+                                                <label asp-for="Image" class="control-label">Slika</label>
+                                                <input asp-for="Image" class="form-control" />
+                                                <span asp-validation-for="Image" class="text-danger"></span>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input asp-for="Highlighted" /> @Html.DisplayNameFor(model => model.Highlighted)
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label asp-for="Description" class="control-label">Kratki opis</label>
+                                                <input asp-for="Description" class="form-control" />
+                                                <span asp-validation-for="Description" class="text-danger"></span>
+                                            </div>
+                                            <div class="form-group">
+                                                <label asp-for="Trailer" class="control-label">Trejler</label>
+                                                <input asp-for="Trailer" class="form-control" />
+                                                <span asp-validation-for="Trailer" class="text-danger"></span>
+                                            </div>
+                                            <div class="form-group">
+                                                <label asp-for="LongDescription" class="control-label">Opis</label>
+                                                <textarea asp-for="LongDescription" class="form-control long-description-movie"></textarea>
+                                                <span asp-validation-for="LongDescription" class="text-danger"></span>
+                                            </div>
+                                            <div class="form-group">
+                                                <label asp-for="ImageRepertoar" class="control-label">Slika, repertoar</label>
+                                                <input asp-for="ImageRepertoar" class="form-control" />
+                                                <span asp-validation-for="ImageRepertoar" class="text-danger"></span>
+                                            </div>
+                                            <div class="form-group">
+                                                <a class="btn btn-success btn-icon-split">
+                                                    <span class="icon text-white-50">
+                                                        <i class="fas fa-check"></i>
+                                                    </span>
+                                                    <input class="btn btn-success" type="submit" value="Snimi"/>
+                                                </a> 
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <a asp-action="Index" class="btn btn-secondary btn-icon-split">
+                                        <span class="icon text-white-50">
+                                            <i class="fas fa-arrow-left"></i>
+                                        </span>
+                                        <span class="text">Nazad na listu</span>
+                                    </a>       
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <label asp-for="Description" class="control-label">Kratki opis</label>
-                                <input asp-for="Description" class="form-control" />
-                                <span asp-validation-for="Description" class="text-danger"></span>
-                            </div>
-                            <div class="form-group">
-                                <label asp-for="Trailer" class="control-label">Trejler</label>
-                                <input asp-for="Trailer" class="form-control" />
-                                <span asp-validation-for="Trailer" class="text-danger"></span>
-                            </div>
-                            <div class="form-group">
-                                <label asp-for="LongDescription" class="control-label">Opis</label>
-                                <textarea asp-for="LongDescription" class="form-control long-description-movie"></textarea>
-                                <span asp-validation-for="LongDescription" class="text-danger"></span>
-                            </div>
-                            <div class="form-group">
-                                <label asp-for="ImageRepertoar" class="control-label">Slika, repertoar</label>
-                                <input asp-for="ImageRepertoar" class="form-control" />
-                                <span asp-validation-for="ImageRepertoar" class="text-danger"></span>
-                            </div>
-                            <div class="form-group">
-                            <a class="btn btn-success btn-icon-split">
-                                <span class="icon text-white-50">
-                                <i class="fas fa-check"></i>
-                                </span>
-                                 <input class="btn btn-success" type="submit" value="Snimi"/>
-                            </a> 
-                            </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
 
-                <div>
-                    <a asp-action="Index" class="btn btn-secondary btn-icon-split">
-                    <span class="icon text-white-50">
-                      <i class="fas fa-arrow-left"></i>
-                    </span>
-                    <span class="text">Nazad na listu</span>
-                  </a>       
-                </div>
+                @section Scripts {
+                    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+                }
             </div>
-          </div>
         </div>
     </div>
+</div>
 
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}

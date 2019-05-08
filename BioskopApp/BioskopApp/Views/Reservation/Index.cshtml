@@ -9,12 +9,12 @@
     <!-- DataTales Example -->
     <div class="card shadow mb-4">
     <div class="card-header py-3">
-        <h6 class="m-0 font-weight-bold text-primary">Rezervacije</h6>
+        <h5 class="m-0 font-weight-bold text-primary">Rezervacije</h5>
     </div>
     <div class="card-body">
         <div class="table-responsive">
         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-            <thead>
+            <thead style="color: black;">
             <tr>
                 <th>
                     Ime filma
@@ -37,7 +37,7 @@
             <tbody>
             @foreach (var item in Model) {
                 <tr>
-                    <td>
+                    <td style="font-weight: bold;">
                         @Html.DisplayFor(modelItem => item.Movie.Name)
                     </td>
                     <td>
@@ -59,7 +59,7 @@
                             <span class="icon text-white-50">
                             <i class="fas fa-check"></i>
                             </span>
-                            <span class="text">Rezervisi</span>
+                            <span class="text">Rezerviši</span>
                         </a>                  
                     </td>
                 </tr>

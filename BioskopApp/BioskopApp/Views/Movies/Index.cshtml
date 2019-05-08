@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<BioskopApp.Data.Movie>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Repertoar";
 }
 
 
@@ -23,7 +23,7 @@
           <!-- DataTales Example -->
           <div class="card shadow mb-4">
             <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary">Repertoar filmova</h6>
+              <h5 class="m-0 font-weight-bold text-primary">Repertoar filmova</h5>
             </div>
             <div class="card-body">
             <p>
@@ -36,7 +36,7 @@
             </p>
               <div class="table-responsive">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                  <thead>
+                  <thead style="color: black;">
                     <tr>
                         <th>
                             Naziv
@@ -68,7 +68,7 @@
                     @foreach (var item in Model) {
                     <tr>
                         <td>
-                            <div class="table_content">
+                            <div class="table_content" style="font-weight: bold;">
                                 @Html.DisplayFor(modelItem => item.Name)
                             </div>
                         </td>
